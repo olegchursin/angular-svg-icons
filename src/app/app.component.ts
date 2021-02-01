@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
+import { SvgIcons } from '../svg/icons';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  title = 'angular-svg';
-}
+export class AppComponent {}
