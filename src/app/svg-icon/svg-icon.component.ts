@@ -1,22 +1,21 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { svgIcons, SvgIcons } from '../../svg/icons';
-
+const filePath = '/assets/icons.svg';
 @Component({
   selector: 'svg-icon',
   templateUrl: './svg-icon.component.html',
   styleUrls: ['./svg-icon.component.css'],
 })
 export class SvgIconComponent implements OnInit {
-  @Input() color = '#696969';
+  @Input() fill = '#696969';
   @Input() size = '24px';
-  @Input() name: SvgIcons | string;
+  @Input() name: string;
   @Input() classes: string[] = [];
   @Input() viewBox = '0 0 580 580';
 
-  public svgPath: string = '';
+  public href: string;
 
   ngOnInit() {
-    this.svgPath = svgIcons[this.name];
+    this.href = `${filePath}#${this.name}`;
   }
 }

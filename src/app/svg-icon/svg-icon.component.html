@@ -1,13 +1,10 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  class="cyqu-svg-icon"
   [attr.viewBox]="viewBox"
   [ngClass]="classes"
-  [attr.fill]="color"
+  [attr.fill]="fill"
   [attr.width]="size"
   [attr.heigth]="size"
 >
-  <svg:g>
-    <svg:path [attr.d]="svgPath"></svg:path>
-  </svg:g>
+  <use [attr.href]="href" />
 </svg>
