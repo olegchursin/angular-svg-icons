@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { SvgIcons } from '../svg/icons';
 
 @Component({
   selector: 'app-root',
